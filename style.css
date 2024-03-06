@@ -411,10 +411,10 @@
     -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 500px) {
-    /* .sec4 h3{
-        font-size:26px;
-        letter-spacing: 4px;
-    } */
+    .sec4 h3{
+        font-size:18px;
+        letter-spacing: 1px;
+    }
     #mask{
         display: none;
     }
