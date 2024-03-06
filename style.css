@@ -34,6 +34,11 @@
     font-size: 2vw;
     color: black;
 }
+@media only screen and (max-width: 500px) {
+    .loder{
+        font-size: 6vw;
+    }
+}
 .overlay{
     width: 100%;
     height: 100vh;
@@ -70,11 +75,18 @@
     color: white;
     cursor: pointer;
 }
-#nav img {
-    width: 100%;
-    cursor: pointer;
+#menuIcon{
+    font-size:27px;
+    color: white;
 }
-
+@media only screen and (max-width: 500px) {
+    #nav {
+        padding: 5vw 6vw;
+    }
+    #nav h2 ,#menuIcon{
+        font-size: 9vw;
+    }
+}
 /* -----------------SEC 1------------------ */
 #sec1 {
     position: relative;
@@ -147,20 +159,20 @@
 }
 @media only screen and (max-width: 700px) {
     #square {
-        height: 50vw;
-        width: 50vw;
-    }
-    #op1,#op2,#op3,#op4,#op5 {
-        font-size: 11.5vw;
-    }
-}
-@media only screen and (max-width: 500px) {
-    #square {
         height: 60vw;
         width: 60vw;
     }
     #op1,#op2,#op3,#op4,#op5 {
-        font-size: 13vw;
+        font-size: 12.5vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #square {
+        height: 70vw;
+        width: 70vw;
+    }
+    #op1,#op2,#op3,#op4,#op5 {
+        font-size: 16vw;
     }
 }
 
@@ -176,7 +188,9 @@
 .work {
     display: flex;
 }
-
+.work_res{
+    display: none;
+}
 /* ----------left section--------- */
 .work_left {
     position: relative;
@@ -267,7 +281,39 @@
     height: 100%;
 }
 
-
+@media only screen and (max-width: 500px) {
+    .work{
+        display: none;
+    }
+    .work_res{
+        display: block;
+    }
+    .work_res_div{
+        padding: 4vw 0;
+    }
+    .work_photo-item {
+        position: relative;        
+        display: flex;
+        justify-content: center;
+    }
+    .work_res_info{
+        padding: 0 5vw;
+    }
+    .work_photo-item img{
+        width:60%;
+    }
+    .work_link {
+        margin-left: 0;
+        width: max-content;
+    }
+    .work_num {
+        font-size: 4vw;
+    }
+    .title {
+        font-size: 6vw;    
+        margin: 2vw 0 4vw;
+    }
+}
 /* --------------sec3------------- */
 .sec3{
     position: relative;
